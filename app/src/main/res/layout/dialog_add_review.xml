@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtIntro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You are reviewing:" />
+
+    <TextView
+        android:id="@+id/txtItemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_toEndOf="@id/txtIntro"
+        android:text="Item Name" />
+
+
+    <RatingBar
+        android:id="@+id/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtItemName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:numStars="5" />
+
+    <EditText
+        android:id="@+id/edtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/RatingBar"
+        android:layout_marginTop="10dp"
+        android:hint="User Name Here" />
+
+    <EditText
+        android:id="@+id/edtTxtReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtUserName"
+        android:gravity="start"
+        android:hint="Typing your review"
+        android:lines="5" />
+
+    <TextView
+        android:id="@+id/txtWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxtReview"
+        android:layout_centerHorizontal="true"
+        android:text="Please fill all information above"
+        android:textColor="#EC1515"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAddReview"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtTxtReview"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_corners"
+        android:text="Add"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

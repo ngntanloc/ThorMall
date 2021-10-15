@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="5dp"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RelativeLayout
+        android:id="@+id/relLay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:layout_centerHorizontal="true">
+
+        <EditText
+            android:id="@+id/edtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Input quantity" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtWarning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Please input quantity that you want to buy"
+        android:textColor="#F10202"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relLay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/background"
+        android:text="ADD" />
+
+</RelativeLayout>

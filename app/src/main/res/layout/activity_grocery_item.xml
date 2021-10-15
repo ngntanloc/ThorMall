@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.GroceryItemActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:elevation="4dp" />
+
+    <Button
+        android:id="@+id/btnAddToCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/background"
+        android:elevation="10dp"
+        android:text="Add To Cart"
+        android:textAllCaps="false" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/btnAddToCard"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="100$"
+                android:textColor="@color/background"
+                android:textStyle="italic" />
+
+            <ImageView
+                android:id="@+id/itemImage"
+                android:layout_width="350dp"
+                android:layout_height="350dp"
+                android:layout_below="@id/txtName"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp" />
+
+            <TextView
+                android:id="@+id/txtQuantityRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage"
+                android:text="(100)"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="15dp"
+                android:layout_alignParentEnd="true"/>
+
+            <RatingBar
+                android:id="@+id/ratingBar"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/itemImage"
+                android:layout_marginTop="15dp"
+                android:layout_toStartOf="@id/txtQuantityRating" />
+
+            <TextView
+                android:id="@+id/txtDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingBar"
+                android:layout_marginTop="10dp"
+                android:text="Description"
+                android:textStyle="italic" />
+
+
+            <RelativeLayout
+                android:id="@+id/reviewRelLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtDescription"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/txtReviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Reviews: "
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtAddReview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/txtReviews"
+                    android:text="(Add a review)"
+                    android:textColor="#BD34AB" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/reviewsRecView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtReviews"
+                    android:layout_marginTop="10dp" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

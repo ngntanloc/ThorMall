@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/cart"
+        android:icon="@drawable/ic_cart"
+        android:title="Cart" />
+    <item
+        android:id="@+id/categories"
+        android:icon="@drawable/ic_category"
+        android:title="Categories" />
+
+    <item
+        android:id="@+id/terms"
+        android:icon="@drawable/ic_term"
+        android:title="Terms" />
+    <item
+        android:id="@+id/licences"
+        android:icon="@drawable/ic_licences"
+        android:title="Licences" />
+
+    <item
+        android:id="@+id/aboutUs"
+        android:icon="@drawable/ic_info"
+        android:title="About Us" />
+
+</menu>

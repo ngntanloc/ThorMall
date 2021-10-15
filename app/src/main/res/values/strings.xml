@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ThorMall</string>
+    <string name="user_name">Tấn Lộc</string>
+    <string name="drawer_open">drawer_open</string>
+    <string name="drawer_close">drawer_close</string>
+    <string name="cart_activity">Cart</string>
+    <string name="search_activity">Search</string>
+    <string name="home_activity">Home</string>
+    <string name="grocery_item">GroceryItem</string>
+
+</resources>
