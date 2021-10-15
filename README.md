@@ -1,4 +1,4 @@
-[![Android CI](https://github.com/thor-coderr/thor-mall/actions/workflows/ThorMall.yml/badge.svg)](https://github.com/thor-coderr/thor-mall/actions/workflows/ThorMall.yml)
+[![Grocery Shop App With CI | © 2021 by thor-coder](https://github.com/thor-coderr/thor-mall/actions/workflows/ThorMall.yml/badge.svg)](https://github.com/thor-coderr/thor-mall/actions/workflows/ThorMall.yml)
 # Welcome to Grocery Shopping App
 
 ### You will find in this repo the following stuff:
