@@ -13,4 +13,4 @@
 
 #### © 2021 thor-coderr | fb.me/ngntanlocc
 
-(https://github.com/thor-coderr/thor-mall/blob/main/thorimg.jpg)
+![ThorImage](https://github.com/thor-coderr/thor-mall/blob/main/thorimg.jpg)
