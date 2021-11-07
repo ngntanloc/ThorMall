@@ -1,5 +1,5 @@
 [![Thor Mall in Android Native App | © 2021 by thor-thunder](https://github.com/thor-coderr/thor-mall/actions/workflows/ThorMall.yml/badge.svg)](https://github.com/thor-coderr/thor-mall/actions/workflows/ThorMall.yml)
-# Welcome to Grocery Shopping App
+# Welcome to Grocery Shopping Android App
 
 ### You will find in this repo the following stuff:
 * The basic UI
